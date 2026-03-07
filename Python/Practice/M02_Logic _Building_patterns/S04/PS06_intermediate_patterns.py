@@ -31,10 +31,27 @@ output:
    *
   * *
  * * *
-* * * *'''
+* * * *
 n=int(input())
 for i in range(1,n+1):
     print(" "*(n-i)+"* "*i)
+n=int(input())
+for i in range(1,n+1):
+    print(" "*(i-1)+"* "*(n-i+1))
     
+n=int(input())
+for i in range(1,n):
+    print((n-i)*" "+i*"* ")
+for i in range(1,n+1):
+    print(" "*(i-1)+"* "*(n-i+1))
 
-        
+n=int(input())
+for i in range(1,n+1):
+    print(" "*(n-i)+" ".join([str(j) for j in range(1,i+1)]))
+n=int(input())
+for i in range(1,n+1):
+    print(" "*(n-i)+" ".join([str(i) for j in range(1,i+1)]))
+    '''
+n=int(input())
+for i in range(1,n+1):
+    print(" "*(n-i)+" ".join([chr(64+j) for j in range(1,i+1)]))
